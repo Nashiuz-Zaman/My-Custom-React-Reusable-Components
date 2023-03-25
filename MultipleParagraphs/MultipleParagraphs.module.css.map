@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,yBAA0B;ECgHxB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;ED/GtB,GAAG,EAAE,MAAM",
+"sources": ["MultipleParagraphs.module.scss","../../scss/_mixin.scss"],
+"names": [],
+"file": "MultipleParagraphs.module.css"
+}

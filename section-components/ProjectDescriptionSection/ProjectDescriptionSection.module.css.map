@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,iCAAkC;EAChC,OAAO,EAAE,QAAQ",
+"sources": ["ProjectDescriptionSection.module.scss"],
+"names": [],
+"file": "ProjectDescriptionSection.module.css"
+}

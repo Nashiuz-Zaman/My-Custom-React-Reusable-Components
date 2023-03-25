@@ -1,0 +1,24 @@
+.heading-description-main__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  color: #25991c; }
+.heading-description-main__description {
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+@media (min-width: 53em) {
+  .heading-description-main__heading {
+    font-size: 2.8rem;
+    margin-bottom: 2rem; }
+  .heading-description-main__description {
+    line-height: 1.7;
+    font-weight: 400; } }
+@media (min-width: 62em) {
+  .heading-description-main__heading {
+    font-size: 3.3rem; }
+  .heading-description-main__description {
+    font-size: 1.5rem; } }
+
+/*# sourceMappingURL=HeadingDescription.module.css.map */

@@ -1,0 +1,17 @@
+.section-project {
+  padding: 0 2.5rem; }
+  .section-project .filter-collapse {
+    margin-top: 2.5rem; }
+  .section-project__filter-projects {
+    padding: 2.5rem 0; }
+
+@media (min-width: 31.5em) {
+  .section-project .filter-collapse {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem; } }
+@media (min-width: 62em) {
+  .section-project {
+    width: 90%;
+    margin-inline: auto; } }
+
+/*# sourceMappingURL=ProjectsSection.module.css.map */

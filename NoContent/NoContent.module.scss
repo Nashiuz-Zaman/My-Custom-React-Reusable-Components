@@ -1,0 +1,30 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.no-content-main {
+  @include sameSize();
+  @include flex-col-align-center();
+
+  &__heading {
+    color: $darkText;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@include mediaMax(22em) {
+  .no-content-main {
+    &__heading {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include mediaMin(45em) {
+  .no-content-main {
+    &__heading {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../scss/variables";
+@import "../../scss/mixin";
+
+.selectbox-main {
+  width: 100%;
+  font-family: inherit;
+
+  label {
+    @include flex-all-center();
+    gap: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+    color: $darkText;
+  }
+
+  span[class*="highlighted-secondary"] {
+    font-size: 2rem;
+  }
+
+  &__error {
+    font-size: 1.6rem;
+    color: $error;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  select {
+    display: block;
+    border: none;
+    background-image: none;
+    @include bg-color($white);
+    @include border-all-sides($darkText);
+    flex-basis: 60%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.7rem;
+    color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: $basic;
+    line-height: inherit;
+
+    option {
+      color: inherit;
+      line-height: inherit;
+      @include bg-color($white);
+    }
+
+    * {
+      border: none !important;
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

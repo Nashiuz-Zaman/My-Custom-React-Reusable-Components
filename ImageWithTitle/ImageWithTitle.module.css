@@ -1,0 +1,10 @@
+.image-with-title-main {
+  -ms-flex-preferred-size: 13rem;
+      flex-basis: 13rem; }
+  .image-with-title-main__title-container {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem; }
+
+/*# sourceMappingURL=ImageWithTitle.module.css.map */

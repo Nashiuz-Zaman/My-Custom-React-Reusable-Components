@@ -1,0 +1,7 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.multiple-paragraphs-main {
+  @include flex-column();
+  gap: 2.5rem;
+}

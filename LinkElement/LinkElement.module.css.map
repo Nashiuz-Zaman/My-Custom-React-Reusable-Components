@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,mDACU;EACR,KAAK,ECOE,OAAO;EDNd,eAAe,EAAE,IAAI;EEyIvB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,MAAM;EFzIjB,SAAS,EAAE,OAAO;EAClB,GAAG,EAAE,MAAM;EACX,cAAc,EAAE,UAAU;EAC1B,KAAK,EAAE,WAAW;AAGpB,8BAAc;EACZ,KAAK,EAAE,WAAW;EAClB,OAAO,EAAE,CAAC;EAEV,kCAAI;IACF,MAAM,ECCE,sFACmB;IDD3B,MAAM,EAAE,MAAM",
+"sources": ["LinkElement.module.scss","../../scss/_variables.scss","../../scss/_mixin.scss"],
+"names": [],
+"file": "LinkElement.module.css"
+}

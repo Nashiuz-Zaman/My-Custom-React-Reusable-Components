@@ -1,0 +1,11 @@
+.collection-of-articles-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 30rem));
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  row-gap: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*# sourceMappingURL=CollectionOfArticles.module.css.map */

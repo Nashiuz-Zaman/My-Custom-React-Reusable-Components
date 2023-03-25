@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.link-button-main {
+  display: inline-block;
+  width: max-content;
+  transition: $basic;
+  @include box-shadow-buttons();
+  @include bg-color($primary);
+  @include linkAlt {
+    @include bg-color($primaryLight);
+  }
+
+  a {
+    @include linkNormal {
+      padding: $buttonPadding;
+      color: $white;
+    }
+  }
+}

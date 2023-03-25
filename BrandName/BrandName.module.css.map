@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOI,2DACU;EACR,KAAK,ECIA,OAAO;EDHZ,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,UAAU;EAC1B,UAAU,ECgCR,iBAAiB;AD3BrB,uHACU;EACR,KAAK,ECPA,OAAO;;ADYlB,wBAAyB;EAGnB,2DACU;IACR,KAAK,ECjBF,OAAO;IDkBV,SAAS,EAAE,MAAM;IACjB,WAAW,EAAE,GAAG",
+"sources": ["BrandName.module.scss","../../scss/_variables.scss"],
+"names": [],
+"file": "BrandName.module.css"
+}

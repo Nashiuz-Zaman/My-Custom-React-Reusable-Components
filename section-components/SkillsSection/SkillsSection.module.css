@@ -1,0 +1,14 @@
+.section-skills__image-gallery div[class*='image-main'] {
+  padding: 0.5rem; }
+  .section-skills__image-gallery div[class*='image-main'] img {
+    height: 7rem; }
+
+@media (min-width: 45em) {
+  .section-skills {
+    margin-inline: 5rem; } }
+@media (min-width: 64em) {
+  .section-skills {
+    width: 50%;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=SkillsSection.module.css.map */

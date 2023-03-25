@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,kCAAmC;EACjC,OAAO,EAAE,QAAQ;EACjB,aAAa,EAAE,IAAI",
+"sources": ["ProjectTechnologiesSection.module.scss"],
+"names": [],
+"file": "ProjectTechnologiesSection.module.css"
+}

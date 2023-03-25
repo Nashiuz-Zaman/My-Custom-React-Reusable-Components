@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '../../scss/animation';
+
+.desktop-navigation-main {
+  @include flex-align-center();
+  gap: 3rem;
+  animation: fadeIn 0.5s ease-in-out 1.25s backwards;
+
+  &__list-of-links {
+    gap: 3rem;
+
+    a {
+      @include linkNormal {
+        font-size: 1.5rem;
+        transition: $basic;
+        text-transform: capitalize;
+      }
+
+      @include linkAlt {
+        color: $primary;
+      }
+    }
+  }
+}

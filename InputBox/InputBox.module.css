@@ -1,0 +1,120 @@
+.inputbox-container {
+  width: 100%; }
+  .inputbox-container__label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    color: #1a161c; }
+  .inputbox-container label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff; }
+  .inputbox-container span[class*="highlighted-secondary"] {
+    font-size: 2rem; }
+  .inputbox-container__error {
+    font-size: 1.4rem;
+    color: #d40000;
+    font-weight: 400;
+    margin-top: 1rem; }
+  .inputbox-container__success {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 1rem; }
+  .inputbox-container input,
+  .inputbox-container input[type="text"],
+  .inputbox-container input[type="email"],
+  .inputbox-container input[type="tel"], .inputbox-container__input {
+    display: block;
+    border: none;
+    background-image: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: #1a161c;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    .inputbox-container input::-webkit-input-placeholder,
+    .inputbox-container input[type="text"]::-webkit-input-placeholder,
+    .inputbox-container input[type="email"]::-webkit-input-placeholder,
+    .inputbox-container input[type="tel"]::-webkit-input-placeholder, .inputbox-container__input::-webkit-input-placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .inputbox-container input:-ms-input-placeholder,
+    .inputbox-container input[type="text"]:-ms-input-placeholder,
+    .inputbox-container input[type="email"]:-ms-input-placeholder,
+    .inputbox-container input[type="tel"]:-ms-input-placeholder, .inputbox-container__input:-ms-input-placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .inputbox-container input::-ms-input-placeholder,
+    .inputbox-container input[type="text"]::-ms-input-placeholder,
+    .inputbox-container input[type="email"]::-ms-input-placeholder,
+    .inputbox-container input[type="tel"]::-ms-input-placeholder, .inputbox-container__input::-ms-input-placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .inputbox-container input::placeholder,
+    .inputbox-container input[type="text"]::placeholder,
+    .inputbox-container input[type="email"]::placeholder,
+    .inputbox-container input[type="tel"]::placeholder, .inputbox-container__input::placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .inputbox-container input:focus,
+    .inputbox-container input[type="text"]:focus,
+    .inputbox-container input[type="email"]:focus,
+    .inputbox-container input[type="tel"]:focus, .inputbox-container__input:focus {
+      outline-color: #208318; }
+      .inputbox-container input:focus::-webkit-input-placeholder,
+      .inputbox-container input[type="text"]:focus::-webkit-input-placeholder,
+      .inputbox-container input[type="email"]:focus::-webkit-input-placeholder,
+      .inputbox-container input[type="tel"]:focus::-webkit-input-placeholder, .inputbox-container__input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .inputbox-container input:focus:-ms-input-placeholder,
+      .inputbox-container input[type="text"]:focus:-ms-input-placeholder,
+      .inputbox-container input[type="email"]:focus:-ms-input-placeholder,
+      .inputbox-container input[type="tel"]:focus:-ms-input-placeholder, .inputbox-container__input:focus:-ms-input-placeholder {
+        color: transparent; }
+      .inputbox-container input:focus::-ms-input-placeholder,
+      .inputbox-container input[type="text"]:focus::-ms-input-placeholder,
+      .inputbox-container input[type="email"]:focus::-ms-input-placeholder,
+      .inputbox-container input[type="tel"]:focus::-ms-input-placeholder, .inputbox-container__input:focus::-ms-input-placeholder {
+        color: transparent; }
+      .inputbox-container input:focus::placeholder,
+      .inputbox-container input[type="text"]:focus::placeholder,
+      .inputbox-container input[type="email"]:focus::placeholder,
+      .inputbox-container input[type="tel"]:focus::placeholder, .inputbox-container__input:focus::placeholder {
+        color: transparent; }
+  .inputbox-container input::-webkit-outer-spin-button,
+  .inputbox-container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .inputbox-container input[type="number"] {
+    -moz-appearance: textfield; }
+
+@media (min-width: 62em) {
+  .inputbox-container__error {
+    font-size: 1.45rem !important;
+    font-weight: 400 !important; } }
+
+/*# sourceMappingURL=InputBox.module.css.map */

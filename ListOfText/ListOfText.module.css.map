@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,wBAAQ;EC+GR,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;ED9GpB,GAAG,EAAE,IAAI;EAET,mCAAa;IAIX,SAAS,EAAE,MAAM;IACjB,WAAW,EAAE,GAAG;IAJhB,2CAAU;MACR,KAAK,EETH,OAAO",
+"sources": ["ListOfText.module.scss","../../scss/_mixin.scss","../../scss/_variables.scss"],
+"names": [],
+"file": "ListOfText.module.css"
+}

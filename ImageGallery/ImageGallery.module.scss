@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.image-gallery-main {
+  @include flexRow();
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  row-gap: 4rem;
+  flex-wrap: wrap;
+}

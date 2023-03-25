@@ -1,0 +1,209 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '../../scss/animation';
+
+.hero-main {
+  position: relative;
+  overflow-x: hidden !important;
+
+  &::after {
+    @include pseudoReset();
+    @include sameSize();
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    backface-visibility: hidden;
+    animation: heroClipAnimation 1.5s ease-in-out forwards,
+      fadeIn 1s ease-in-out forwards;
+  }
+
+  &__top-part {
+    padding: 20rem 0 0 0;
+
+    &__heading-desc-btn-textbox {
+      animation: moveFromLeft 0.5s ease-out backwards 1.5s,
+        fadeIn 0.75s ease-in-out backwards 1.5s;
+
+      p[class*='heading-desc-btn-textbox__short-introduction'] {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $darkText;
+        padding-left: 2.5rem;
+        margin-bottom: 1.6rem;
+      }
+
+      h2[class*='heading-desc-btn-textbox__heading'] {
+        width: 70%;
+        font-size: 2.65rem;
+        text-transform: capitalize;
+        line-height: 1.2;
+        font-weight: 600;
+        padding-left: 2.5rem;
+        color: $darkText;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  &__bottom-part {
+    &__text {
+      @include primary-gradient();
+      clip-path: polygon(0 0, 75% 0%, 60% 100%, 0% 100%);
+      animation: moveFromLeft 0.5s ease-out backwards 1.5s,
+        fadeIn 0.75s ease-in-out backwards 1.5s;
+      margin-bottom: 6rem;
+
+      p[class*='description'] {
+        padding: 1.5rem 2.5rem;
+        width: 70%;
+        color: $white;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+    }
+
+    &__decoration-with-image {
+      height: 10rem;
+      position: relative;
+      animation: moveFromRight 0.5s ease-out backwards 1.5s,
+        fadeIn 0.5s ease-in-out backwards 1.5s;
+
+      &__image-information {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include flexColumn();
+        justify-content: center;
+        align-items: flex-end;
+        @include bg-color($darkText);
+        clip-path: polygon(30% 0, 100% 0%, 100% 100%, 15% 100%);
+        padding-right: 38%;
+        line-height: 1.5;
+        color: $white;
+
+        &__name,
+        &__occupation {
+          font-size: 1.35rem;
+        }
+
+        &__occupation {
+          color: $primaryLight;
+        }
+      }
+
+      &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(3rem);
+        width: 47.5%;
+        display: block;
+        box-shadow: 1rem 2rem 2rem rgba($darkText, 0.2);
+      }
+    }
+  }
+}
+
+@include mediaMax(24em) {
+  .hero-main {
+    &__bottom-part {
+      &__text {
+        clip-path: polygon(0 0, 80% 0%, 65% 100%, 0% 100%);
+      }
+
+      &__decoration-with-image {
+        &__image-information {
+          padding-right: 37.5%;
+          clip-path: polygon(28% 0, 100% 0%, 100% 100%, 13% 100%);
+        }
+      }
+    }
+  }
+}
+
+@include mediaMax(20em) {
+  .hero-main {
+    &__bottom-part {
+      &__text {
+        clip-path: polygon(0 0, 80% 0%, 65% 100%, 0% 100%);
+
+        p[class*='description'] {
+          width: 72%;
+        }
+      }
+
+      &__decoration-with-image {
+        &__image-information {
+          padding-right: 37.5%;
+          clip-path: polygon(28% 0, 100% 0%, 100% 100%, 13% 100%);
+        }
+      }
+    }
+  }
+}
+
+@include mediaMin(27em) {
+  .hero-main {
+    &__bottom-part {
+      p[class*='description'] {
+        width: 75%;
+      }
+      &__decoration-with-image {
+        &__image-information {
+          padding-right: 40%;
+        }
+
+        &__image {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@include mediaMin(37em) {
+  .hero-main {
+    &__top-part {
+      &__heading-desc-btn-textbox {
+        p[class*='heading-desc-btn-textbox__short-introduction'] {
+          font-size: 1.8rem;
+        }
+
+        h2[class*='heading-desc-btn-textbox__heading'] {
+          width: 50%;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &__bottom-part {
+      &__text {
+        clip-path: polygon(0 0, 65% 0%, 50% 100%, 0% 100%);
+      }
+
+      p[class*='description'] {
+        font-size: 1.6rem;
+        width: 55%;
+      }
+      &__decoration-with-image {
+        &__image-information {
+          clip-path: polygon(40% 0, 100% 0%, 100% 100%, 25% 100%);
+          padding-right: 37%;
+
+          &__name,
+          &__occupation {
+            font-size: 1.6rem;
+          }
+        }
+
+        &__image {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

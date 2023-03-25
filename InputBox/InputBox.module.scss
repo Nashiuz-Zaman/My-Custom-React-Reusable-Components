@@ -1,0 +1,94 @@
+@import "../../scss/variables";
+@import "../../scss/mixin";
+
+.inputbox-container {
+  width: 100%;
+
+  // __label is span tag defining the label
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    color: $darkText;
+  }
+
+  // this is the actual label tag wrapping the input tag
+  label {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    color: $white;
+  }
+
+  span[class*="highlighted-secondary"] {
+    font-size: 2rem;
+  }
+
+  &__error {
+    font-size: 1.4rem;
+    color: $error;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  &__success {
+    font-size: 1.4rem;
+    color: $white;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  input,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  &__input {
+    display: block;
+    border: none;
+    background-image: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: $darkText;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: $basic;
+
+    &::placeholder {
+      color: $gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      transition: $basic;
+    }
+
+    &:focus {
+      outline-color: $primary;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@media (min-width: 62em) {
+  .inputbox-container {
+    &__error {
+      font-size: 1.45rem !important;
+      font-weight: 400 !important;
+    }
+  }
+}

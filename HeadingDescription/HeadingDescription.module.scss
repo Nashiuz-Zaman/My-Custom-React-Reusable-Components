@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.heading-description-main {
+  &__heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    color: $primaryLight;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
+
+@include mediaMin(53em) {
+  .heading-description-main {
+    &__heading {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+
+    &__description {
+      line-height: 1.7;
+      font-weight: 400;
+    }
+  }
+}
+
+@include mediaMin(62em) {
+  .heading-description-main {
+    &__heading {
+      font-size: 3.3rem;
+    }
+
+    &__description {
+      font-size: 1.5rem;
+    }
+  }
+}

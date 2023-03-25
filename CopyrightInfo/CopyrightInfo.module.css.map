@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,6CAA2B;EACzB,KAAK,ECeD,IAAI;EDdR,SAAS,EAAE,MAAM;;AEuQnB,wBAAgC;EFlQhC,oBAAqB;IACnB,UAAU,EAAE,MAAM;IAClB,6CAA2B;MACzB,SAAS,EAAE,OAAO;MAClB,WAAW,EAAE,GAAG;AEwPpB,wBAAgC;EFjP9B,6CAA2B;IACzB,SAAS,EAAE,MAAM",
+"sources": ["CopyrightInfo.module.scss","../../scss/_variables.scss","../../scss/_mixin.scss"],
+"names": [],
+"file": "CopyrightInfo.module.css"
+}

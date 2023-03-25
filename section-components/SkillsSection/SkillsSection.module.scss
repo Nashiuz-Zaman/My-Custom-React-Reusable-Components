@@ -1,0 +1,27 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixin';
+
+.section-skills {
+  &__image-gallery {
+    div[class*='image-main'] {
+      padding: 0.5rem;
+
+      img {
+        height: 7rem;
+      }
+    }
+  }
+}
+
+@include mediaMin(45em) {
+  .section-skills {
+    margin-inline: 5rem;
+  }
+}
+
+@include mediaMin(64em) {
+  .section-skills {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

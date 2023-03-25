@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,sBAAuB;EACrB,UAAU,EAAE,KAAK;EAEjB,uCAAmB;IACjB,UAAU,EAAE,MAAM;IAClB,SAAS,EAAE,MAAM;IACjB,WAAW,EAAE,GAAG;IAChB,UAAU,EAAE,IAAI",
+"sources": ["ImageWithTitle.module.scss"],
+"names": [],
+"file": "ImageWithTitle.module.css"
+}

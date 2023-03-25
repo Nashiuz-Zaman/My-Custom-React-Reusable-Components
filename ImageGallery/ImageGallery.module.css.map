@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,mBAAoB;EC4FlB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;ED3FnB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI",
+"sources": ["ImageGallery.module.scss","../../scss/_mixin.scss"],
+"names": [],
+"file": "ImageGallery.module.css"
+}

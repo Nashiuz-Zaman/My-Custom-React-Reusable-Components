@@ -1,0 +1,25 @@
+.error-popup-main__checkbox {
+  margin-bottom: 2.5rem;
+  margin-inline: auto; }
+.error-popup-main__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.2; }
+.error-popup-main__message {
+  color: inherit;
+  font-size: 1.45rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  text-align: center; }
+.error-popup-main__button button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.55rem;
+  margin-inline: auto;
+  background-color: #d40000; }
+
+/*# sourceMappingURL=ErrorPopup.module.css.map */

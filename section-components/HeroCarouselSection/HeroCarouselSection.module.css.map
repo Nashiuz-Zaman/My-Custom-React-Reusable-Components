@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,uEAA4C;EAC1C,MAAM,EAAE,iBAAiB",
+"sources": ["HeroCarouselSection.module.scss"],
+"names": [],
+"file": "HeroCarouselSection.module.css"
+}

@@ -1,0 +1,17 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.success-icon-container {
+  width: 5rem;
+  padding: 0.8rem;
+  @include squarebox();
+  border-radius: 50%;
+  @include no-overflow();
+  @include bg-color($success);
+  @include flex-all-center();
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+.textarea-main-container {
+  width: 100%; }
+  .textarea-main-container__label {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1a161c; }
+  .textarea-main-container label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500; }
+  .textarea-main-container span[class*='highlighted-secondary'] {
+    font-size: 2rem; }
+  .textarea-main-container__error {
+    font-size: 1.4rem;
+    color: #d40000;
+    font-weight: 400;
+    margin-top: 1rem; }
+  .textarea-main-container__success {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 1rem; }
+  .textarea-main-container textarea {
+    display: block;
+    border: none;
+    background-image: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: #1a161c;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    height: 12.5rem;
+    overflow: auto; }
+    .textarea-main-container textarea::-webkit-input-placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .textarea-main-container textarea:-ms-input-placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .textarea-main-container textarea::-ms-input-placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .textarea-main-container textarea::placeholder {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 300;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .textarea-main-container textarea:focus {
+      outline-color: #208318; }
+      .textarea-main-container textarea:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .textarea-main-container textarea:focus:-ms-input-placeholder {
+        color: transparent; }
+      .textarea-main-container textarea:focus::-ms-input-placeholder {
+        color: transparent; }
+      .textarea-main-container textarea:focus::placeholder {
+        color: transparent; }
+
+@media (min-width: 62em) {
+  .textarea-main-container__error {
+    font-size: 1.45rem !important;
+    font-weight: 400 !important; } }
+
+/*# sourceMappingURL=Textarea.module.css.map */

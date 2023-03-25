@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.header-main {
+  @include flexRow();
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  position: fixed;
+  max-width: 140rem;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  transition: $basic;
+}
+
+.header-main-alternative {
+  @include trans-bg($white, 0.98);
+  @include header-box-shadow();
+}

@@ -1,0 +1,48 @@
+.heading-desc-btn-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: inherit; }
+  .heading-desc-btn-textbox__short-introduction {
+    font-family: inherit;
+    color: #f3f0f1;
+    font-size: 1.8rem;
+    margin-bottom: 1rem; }
+  .heading-desc-btn-textbox__heading {
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    line-height: 1.1; }
+  .heading-desc-btn-textbox__subheading {
+    font-size: 1.45rem;
+    margin-bottom: 1.3rem; }
+  .heading-desc-btn-textbox__description {
+    font-size: 1.6rem; }
+  .heading-desc-btn-textbox__list-of-text {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .heading-desc-btn-textbox .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.5rem; }
+
+/*# sourceMappingURL=HeadingDescBtn.module.css.map */

@@ -1,0 +1,62 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '../../scss/animation';
+
+.rotating-images-main {
+  @include border-all-sides($darkShade, 3px);
+  border-radius: 50%;
+  border-right-color: $primary;
+  border-left-color: $primary;
+  animation: rotateCircle 60s linear infinite;
+
+  &__text-part {
+    padding: 2.5rem;
+    width: fit-content;
+    aspect-ratio: 16/16;
+    @include primary-gradient(to bottom);
+    color: $white;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    @include flex-column();
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: rotateImage 60s linear infinite;
+  }
+
+  &__images {
+    @include sameSize();
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__single-image {
+      width: 55%;
+      aspect-ratio: 1.32/1;
+      @include bg-cover-center();
+      position: absolute;
+      box-shadow: 0 1.5rem 3rem rgba($darkText, 0.3);
+      backface-visibility: hidden;
+      transform-origin: center !important;
+      animation: rotateImage 60s linear infinite;
+
+      &--image-1 {
+        top: -30%;
+        left: 22.5%;
+      }
+      &--image-2 {
+        top: 29%;
+        left: -35%;
+      }
+      &--image-3 {
+        top: 29%;
+        right: -35%;
+      }
+      &--image-4 {
+        bottom: -30%;
+        left: 22.5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.external-link-button-main {
+  display: inline-block;
+  width: max-content;
+  @include box-shadow-buttons();
+  padding: $buttonPadding;
+  @include bg-color($primary);
+  @include flex-all-center();
+  gap: 0.5rem;
+
+  div[class*='image-main'] {
+    width: max-content;
+    padding: 0;
+  }
+
+  img {
+    filter: $filterWhite;
+    height: 1.5rem;
+  }
+
+  a {
+    @include linkNormal {
+      @include link-reset();
+      color: $white;
+      @include flex-align-center();
+      transition: $basic;
+      text-transform: capitalize;
+    }
+
+    @include linkAlt {
+      @include bg-color($primaryDark);
+    }
+  }
+}

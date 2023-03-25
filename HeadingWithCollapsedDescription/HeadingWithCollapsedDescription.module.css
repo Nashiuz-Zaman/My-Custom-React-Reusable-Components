@@ -1,0 +1,49 @@
+.heading-with-collapsed-description-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .heading-with-collapsed-description-main__button {
+    padding: 1rem 0; }
+    .heading-with-collapsed-description-main__button__heading {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize; }
+    .heading-with-collapsed-description-main__button__icon {
+      width: 2rem; }
+      .heading-with-collapsed-description-main__button__icon img {
+        -webkit-filter: invert(7%) sepia(8%) saturate(1300%) hue-rotate(236deg) brightness(97%) contrast(95%);
+                filter: invert(7%) sepia(8%) saturate(1300%) hue-rotate(236deg) brightness(97%) contrast(95%); }
+  .heading-with-collapsed-description-main__description p {
+    padding: 1.5rem 0 0; }
+
+@media (max-width: 21em) {
+  .heading-with-collapsed-description-main__heading-and-button-container__heading {
+    line-height: 1.5; } }
+@media (min-width: 64em) {
+  .heading-with-collapsed-description-main {
+    color: #1a161c; }
+    .heading-with-collapsed-description-main__button {
+      padding: 1rem;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+      .heading-with-collapsed-description-main__button:hover {
+        background-color: #f3f0f1; }
+      .heading-with-collapsed-description-main__button__heading {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: inherit; }
+    .heading-with-collapsed-description-main__description p {
+      font-size: 1.55rem !important;
+      padding: 1.5rem 5rem 1.5rem 1rem;
+      color: inherit;
+      line-height: 1.7 !important;
+      font-weight: 400; } }
+
+/*# sourceMappingURL=HeadingWithCollapsedDescription.module.css.map */

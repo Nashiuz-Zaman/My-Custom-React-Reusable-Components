@@ -1,0 +1,6 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.list-of-links-main {
+  @include flex-align-center();
+}

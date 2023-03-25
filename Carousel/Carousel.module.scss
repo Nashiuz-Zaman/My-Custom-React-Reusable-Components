@@ -1,0 +1,119 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '../../scss/animation';
+
+.carousel-main {
+  @include sameSize();
+  position: relative;
+
+  &__scroll-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+    gap: 2.5rem;
+    padding: 0 2.5rem;
+    scroll-padding-inline: 2.5rem;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    height: 100%;
+    padding-bottom: 3rem;
+    overflow-x: auto;
+    scrollbar-color: $darkShade $lightShade; // for firefox
+
+    &::-webkit-scrollbar {
+      height: 0.3rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $lightShade;
+      margin: 0 2.5rem;
+      border-radius: 100rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $darkShade;
+      border-radius: 100rem;
+    }
+
+    &__scroll-item {
+      @include sameSize();
+      scroll-snap-align: start;
+
+      &__zoom {
+        width: 4rem;
+        padding: 0.85rem;
+        background-color: $primaryLight;
+        border-radius: 50%;
+        animation: zoom-in-out 1.3s ease-in-out infinite;
+        button {
+          filter: $filterWhite;
+        }
+
+        &:active {
+          background-color: $primaryDark;
+        }
+      }
+
+      &__back-image {
+        @include sameSize();
+        @include bg-color($lightShade);
+        @include flex-column();
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 3rem 0;
+        @include box-shadow-buttons();
+      }
+
+      &__front-image {
+        div[class*='loading-spinner-main'] {
+          height: 35rem;
+          width: 50%;
+        }
+
+        img {
+          max-height: 35rem;
+          width: 50%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@include mediaMin(37em) {
+  .carousel-main {
+    &__scroll-container {
+      grid-auto-columns: 60%;
+    }
+  }
+}
+
+@include mediaMin(45em) {
+  .carousel-main {
+    &__scroll-container {
+      grid-auto-columns: 50%;
+    }
+  }
+}
+
+@include mediaMin(53em) {
+  .carousel-main {
+    &__scroll-container {
+      grid-auto-columns: 45%;
+    }
+  }
+}
+
+@include mediaMin(62em) {
+  .carousel-main {
+    &__scroll-container {
+      grid-auto-columns: 40%;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        height: 1rem;
+      }
+    }
+  }
+}

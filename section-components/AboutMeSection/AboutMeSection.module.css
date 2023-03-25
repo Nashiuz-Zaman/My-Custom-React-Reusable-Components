@@ -1,0 +1,109 @@
+.section-about-me__description {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#25991c), to(#1b6d14));
+  background-image: linear-gradient(to bottom, #25991c, #1b6d14);
+  padding: 2.5rem 2.5rem 5rem;
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% calc(100% - 2.5rem), 50% 100%, 0 calc(100% - 2.5rem));
+          clip-path: polygon(0 0, 50% 0, 100% 0, 100% calc(100% - 2.5rem), 50% 100%, 0 calc(100% - 2.5rem)); }
+  .section-about-me__description p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #fff; }
+
+@media (min-width: 37em) {
+  .section-about-me {
+    margin-inline: 2.5rem; } }
+@media (min-width: 45em) {
+  .section-about-me {
+    margin-inline: 5rem; }
+    .section-about-me__description {
+      -webkit-clip-path: none;
+              clip-path: none;
+      -webkit-box-shadow: 0 2rem 4rem rgba(26, 22, 28, 0.15);
+              box-shadow: 0 2rem 4rem rgba(26, 22, 28, 0.15);
+      padding: 2.5rem; } }
+@media (min-width: 48em) {
+  .section-about-me {
+    margin-inline: 0; }
+    .section-about-me__description-and-image-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .section-about-me__description-and-image-container__description-container {
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%; }
+        .section-about-me__description-and-image-container__description-container__description {
+          padding: 2.5rem;
+          background-color: #1a161c; }
+          .section-about-me__description-and-image-container__description-container__description p {
+            color: #fff;
+            font-size: 1.5rem !important;
+            line-height: 1.6 !important; }
+      .section-about-me__description-and-image-container__image {
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+        z-index: -1;
+        position: relative;
+        height: 15rem;
+        background-image: -webkit-gradient(linear, left top, right top, from(#25991c), to(#1b6d14));
+        background-image: linear-gradient(to right, #25991c, #1b6d14); }
+        .section-about-me__description-and-image-container__image img {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-40%);
+                  transform: translateX(-40%);
+          width: auto;
+          height: 175%; } }
+@media (min-width: 62em) {
+  .section-about-me__description-and-image-container__description-container {
+    position: relative;
+    z-index: 0; }
+    .section-about-me__description-and-image-container__description-container::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 24rem;
+      aspect-ratio: 16/16;
+      top: -5rem;
+      left: 0;
+      z-index: -1;
+      background-image: -webkit-gradient(linear, right top, left top, from(#25991c), to(#1b6d14));
+      background-image: linear-gradient(to left, #25991c, #1b6d14); }
+    .section-about-me__description-and-image-container__description-container__description {
+      padding: 4rem;
+      margin-left: 4rem;
+      -webkit-box-shadow: 0 1.5rem 3rem rgba(26, 22, 28, 0.3);
+              box-shadow: 0 1.5rem 3rem rgba(26, 22, 28, 0.3); } }
+@media (min-width: 75em) {
+  .section-about-me__description-and-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .section-about-me__description-and-image-container__description-container {
+      position: relative;
+      z-index: 0; }
+      .section-about-me__description-and-image-container__description-container::before {
+        width: 32.5rem;
+        top: -6.5rem; }
+      .section-about-me__description-and-image-container__description-container__description p {
+        line-height: 1.6 !important;
+        font-size: 1.7rem !important;
+        font-weight: 300 !important; }
+    .section-about-me__description-and-image-container__image img {
+      height: 225%; } }
+
+/*# sourceMappingURL=AboutMeSection.module.css.map */

@@ -1,0 +1,6 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.heading-description-group-main {
+  @include flex-column();
+}

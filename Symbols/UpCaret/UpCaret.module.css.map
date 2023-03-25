@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,cAAe;EACb,UAAU,EC0CJ,iBAAiB",
+"sources": ["UpCaret.module.scss","../../../scss/_variables.scss"],
+"names": [],
+"file": "UpCaret.module.css"
+}

@@ -1,0 +1,168 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '../../scss/animation';
+
+.desktop-hero-main {
+  width: 100%;
+  height: fit-content;
+
+  &__both-sides {
+    @include sameSize();
+    @include flex-column();
+    height: 100%;
+
+    &__left {
+      flex-basis: 66rem;
+      @include bg-cover-custom(50% 0);
+      @include flex-column();
+      animation: clipPathOpen 0.75s ease-in-out;
+
+      &__text-part {
+        max-width: 55%;
+        padding: 2.5rem 2.5rem 3rem;
+        margin-top: auto;
+        @include trans-bg($darkText, 0.9);
+        @include bg-blur(2px);
+        color: $white;
+        animation: moveFromLeft 0.5s ease-out backwards,
+          fadeIn 0.5s ease-in-out backwards;
+        animation-delay: 0.75s;
+
+        p[class*='heading-desc-btn-textbox__short-introduction'] {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $white;
+          margin-bottom: 1.5rem;
+        }
+
+        h2[class*='heading-desc-btn-textbox__heading'] {
+          font-size: 4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: $white;
+          line-height: 1.2;
+        }
+
+        p[class*='heading-desc-btn-textbox__description'] {
+          font-size: 1.6rem;
+          line-height: 1.5;
+          font-weight: 500;
+        }
+
+        div[class*='button-group'] {
+          margin-top: 2.5rem;
+
+          div:nth-child(1) {
+            @include border-all-sides(transparent);
+          }
+
+          div:nth-child(2) {
+            @include bg-color(transparent);
+            @include border-all-sides($white);
+
+            @include linkAlt {
+              @include bg-color($transHover);
+            }
+          }
+        }
+      }
+    }
+
+    &__right {
+      flex-basis: 56rem;
+      animation: fadeIn 0.5s ease-out 1.75s backwards;
+
+      position: relative;
+
+      &__rotating-images {
+        position: absolute;
+        top: 28%;
+        right: 28.5%;
+        z-index: 2;
+        width: 43%;
+        aspect-ratio: 16/16;
+      }
+    }
+  }
+}
+
+@include mediaMin(48em) {
+  .desktop-hero-main {
+    &__both-sides {
+      &__left {
+        &__text-part {
+          max-width: 52% !important;
+        }
+      }
+
+      &__right {
+        flex-basis: 66rem;
+      }
+    }
+  }
+}
+
+@include mediaMin(50em) {
+  .desktop-hero-main {
+    &__both-sides {
+      &__left {
+        &__text-part {
+          max-width: 50% !important;
+        }
+      }
+    }
+  }
+}
+
+@include mediaMin(62em) {
+  .desktop-hero-main {
+    height: 66rem;
+
+    &__both-sides {
+      @include flex-row();
+      &__left {
+        flex-basis: 40%;
+        &__text-part {
+          max-width: 100% !important;
+        }
+      }
+
+      &__right {
+        flex-basis: 60%;
+
+        &__rotating-images {
+          top: 30%;
+          right: 25%;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@include mediaMin(75em) {
+  .desktop-hero-main {
+    &__both-sides {
+      &__left {
+        &__text-part {
+          p[class*='heading-desc-btn-textbox__short-introduction'],
+          p[class*='heading-desc-btn-textbox__description'] {
+            font-size: 1.8rem;
+          }
+
+          h2[class*='heading-desc-btn-textbox__heading'] {
+            font-size: 5rem;
+          }
+        }
+      }
+
+      &__right {
+        &__rotating-images {
+          top: 28%;
+          right: 28.5%;
+          width: 43%;
+        }
+      }
+    }
+  }
+}

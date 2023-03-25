@@ -1,0 +1,22 @@
+.rightcaret-main {
+  width: 1.5rem;
+  aspect-ratio: 16/16; }
+  .rightcaret-main__button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important; }
+    .rightcaret-main__button:focus {
+      outline-color: #208318 !important; }
+
+/*# sourceMappingURL=RightCaret.module.css.map */

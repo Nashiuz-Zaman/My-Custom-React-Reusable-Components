@@ -1,0 +1,103 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.article-main {
+  padding: 3rem 2.5rem;
+  display: block;
+  @include bg-color($lightShade);
+
+  &__article-image-box__box {
+    &__image {
+      width: 100%;
+      aspect-ratio: 1.32/1;
+      @include bg-cover-center();
+      @include box-shadow-middle();
+    }
+  }
+
+  &__article-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+  }
+
+  &__article-related-functionality-container {
+    &--non-desktop-version {
+      @include flex-row();
+      align-items: center;
+      justify-content: center !important;
+      gap: 3rem;
+      margin-top: 3.5rem;
+
+      & > div:nth-child(1) {
+        @include bg-color($darkText);
+      }
+    }
+  }
+}
+
+@include mediaMin(64em) {
+  .article-main {
+    padding: 3rem 0 0;
+    box-shadow: 0 10px 15px rgba($darkText, 0.15);
+
+    &__article-name {
+      margin-bottom: 2.5rem;
+    }
+
+    &__article-image-box__box {
+      overflow: hidden;
+      box-shadow: 0 -5px 10px rgba($darkText, 0.15);
+    }
+
+    &:hover &__article-related-functionality-container--desktop-version,
+    &:hover &__article-related-functionality-container--desktop-version > div {
+      opacity: 1;
+      transform: translate(0, 0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    &__article-related-functionality-container {
+      &--desktop-version,
+      &--desktop-version > div {
+        opacity: 0;
+        backface-visibility: hidden;
+        visibility: collapse;
+        pointer-events: none;
+      }
+
+      &--desktop-version {
+        margin-top: 0;
+        @include sameSize();
+        @include trans-bg($darkText, 0.85);
+        @include bg-blur(4px);
+        @include flex-all-center();
+        gap: 3rem;
+        transform: translate(0, -100%);
+        transition: all 0.2s ease-out;
+      }
+
+      &--desktop-version > div {
+        transition: opacity 0.2s ease-out 0.2s, transform 0.2s ease-out 0.2s,
+          background-color 0.2s ease-out;
+        transform: translate(0, 150%);
+
+        &:nth-child(1) {
+          @include bg-color(transparent !important);
+          @include border-all-sides($white);
+
+          @include linkAlt {
+            @include bg-color($transHover !important);
+          }
+        }
+
+        &:nth-child(2) {
+          @include border-all-sides($primary);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKI,uDAAyB;EACvB,OAAO,EAAE,MAAM;EAEf,2DAAI;IACF,MAAM,EAAE,IAAI;;AC8PlB,wBAAgC;EDvPhC,eAAgB;IACd,aAAa,EAAE,IAAI;ACsPrB,wBAAgC;EDjPhC,eAAgB;IACd,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,MAAM",
+"sources": ["SkillsSection.module.scss","../../../scss/_mixin.scss"],
+"names": [],
+"file": "SkillsSection.module.css"
+}

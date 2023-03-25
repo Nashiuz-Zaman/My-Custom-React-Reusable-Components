@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,gBAAiB;EACf,UAAU,EC0CJ,iBAAiB",
+"sources": ["DownCaret.module.scss","../../../scss/_variables.scss"],
+"names": [],
+"file": "DownCaret.module.css"
+}

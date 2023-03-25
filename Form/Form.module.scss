@@ -1,0 +1,202 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '../../scss/animation';
+
+.form-main {
+  position: relative;
+  width: 100%;
+  @include flexColumn();
+
+  &__imgbox {
+    width: 100%;
+    aspect-ratio: 16/13;
+    @include bg-cover-custom(40% 50%);
+    margin-bottom: -2.5rem;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 2.5rem),
+      50% 100%,
+      0% calc(100% - 2.5rem)
+    );
+
+    &__heading-description-main {
+      display: none;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    padding: 5rem 2.5rem 3rem;
+    @include bg-color($lightShade);
+    overflow: hidden !important;
+
+    label {
+      span {
+        font-weight: 500;
+      }
+      p[class*='error'] {
+        color: $error;
+      }
+    }
+
+    &__basic-information {
+      @include flex-column();
+      gap: 2.5rem;
+
+      input::selection {
+        background-color: $primaryLight !important;
+        color: $white !important;
+      }
+
+      &__name-and-email {
+        @include flex-column();
+        gap: 2.5rem;
+      }
+    }
+
+    &__submit-button {
+      button {
+        width: 100%;
+      }
+    }
+
+    &__loading-spinner {
+      height: 30rem !important;
+    }
+
+    &__loading-spinner,
+    &__success-popup,
+    &__error-popup {
+      @include position-center(fixed);
+      z-index: 1001;
+      @include bg-color($lightShade);
+      width: 80%;
+    }
+
+    &__success-popup,
+    &__error-popup {
+      color: $darkText;
+      padding: 2.5rem;
+    }
+
+    &__error-popup {
+      a {
+        @include linkNormal {
+          color: $primary;
+          font-size: inherit;
+          text-transform: none;
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s 0.2s;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: collapse;
+  transition: all 0.2s;
+}
+
+@include mediaMin(37em) {
+  .form-main {
+    width: 65%;
+    @include margin-auto();
+    @include box-shadow-down();
+
+    &__form {
+      &__success-popup,
+      &__error-popup,
+      &__loading-spinner {
+        width: 36rem;
+      }
+    }
+  }
+}
+
+@include mediaMin(45em) {
+  .form-main {
+    width: 50%;
+  }
+}
+
+@include mediaMin(53em) {
+  .form-main {
+    width: 100%;
+    @include box-shadow-down();
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__imgbox {
+      @include sameSize();
+      aspect-ratio: initial;
+      clip-path: none;
+      margin-bottom: 0;
+      padding: 0;
+      margin: 0;
+      @include bg-cover-custom(60% 50%);
+      @include flex-row();
+      overflow-x: hidden;
+
+      &__heading-description-main {
+        margin-top: auto;
+        display: block;
+        color: $white;
+        @include trans-bg($darkText, 0.8);
+        @include bg-blur(4px);
+        width: 100%;
+        height: fit-content;
+        padding: 2.5rem;
+        animation: moveFromLeft 0.75s ease-out, fadeIn 0.75s ease-out;
+      }
+    }
+
+    &__form {
+      width: unset;
+      padding: 3rem 3.5rem;
+      overflow: hidden !important;
+    }
+  }
+}
+
+@include mediaMin(62em) {
+  .form-main {
+    grid-template-columns: 1.2fr 1fr;
+    width: 85%;
+    @include margin-auto();
+    box-shadow: 0 2rem 4rem rgba($darkText, 0.2);
+
+    &__imgbox {
+      display: block;
+
+      &__heading-description-main {
+        width: 70%;
+        margin-top: 30%;
+      }
+    }
+  }
+}
+
+@include mediaMin(75em) {
+  .form-main {
+    grid-template-columns: 1.2fr 1fr;
+    width: 85%;
+    @include margin-auto();
+    box-shadow: 0 2rem 4rem rgba($darkText, 0.2);
+
+    &__form {
+      &__basic-information {
+        &__name-and-email {
+          @include flex-row();
+        }
+      }
+    }
+  }
+}

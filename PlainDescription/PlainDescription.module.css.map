@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,uBAAwB;EACtB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EAEZ,oCAAe;IACb,SAAS,EAAE,OAAO;IAClB,WAAW,EAAE,GAAG;IAChB,WAAW,EAAE,OAAO;IACpB,KAAK,EAAE,OAAO;;AAIlB,wBAAyB;EAErB,oCAAe;IACb,SAAS,EAAE,iBAAiB;IAC5B,WAAW,EAAE,eAAe",
+"sources": ["PlainDescription.module.scss"],
+"names": [],
+"file": "PlainDescription.module.css"
+}

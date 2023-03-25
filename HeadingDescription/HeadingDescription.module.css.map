@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,kCAAW;EACT,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,UAAU;EAC1B,aAAa,EAAE,MAAM;EACrB,KAAK,ECPM,OAAqB;ADUlC,sCAAe;EACb,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,GAAG;;AEyPlB,wBAAgC;EFnP9B,kCAAW;IACT,SAAS,EAAE,MAAM;IACjB,aAAa,EAAE,IAAI;EAGrB,sCAAe;IACb,WAAW,EAAE,GAAG;IAChB,WAAW,EAAE,GAAG;AE4OpB,wBAAgC;EFrO9B,kCAAW;IACT,SAAS,EAAE,MAAM;EAGnB,sCAAe;IACb,SAAS,EAAE,MAAM",
+"sources": ["HeadingDescription.module.scss","../../scss/_variables.scss","../../scss/_mixin.scss"],
+"names": [],
+"file": "HeadingDescription.module.css"
+}

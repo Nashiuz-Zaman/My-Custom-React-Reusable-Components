@@ -1,0 +1,72 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.heading-with-collapsed-description-main {
+  @include flex-column();
+
+  &__button {
+    padding: 1rem 0;
+
+    &__heading {
+      width: fit-content;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    &__icon {
+      width: 2rem;
+
+      img {
+        filter: $filterDarkText;
+      }
+    }
+  }
+
+  &__description {
+    p {
+      padding: 1.5rem 0 0;
+    }
+  }
+}
+
+@include mediaMax(21em) {
+  .heading-with-collapsed-description-main {
+    &__heading-and-button-container {
+      &__heading {
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@include mediaMin(64em) {
+  .heading-with-collapsed-description-main {
+    color: $darkText;
+
+    &__button {
+      padding: 1rem;
+      transition: $basic;
+
+      &:hover {
+        @include bg-color($lightShade);
+      }
+
+      &__heading {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: inherit;
+      }
+    }
+
+    &__description {
+      p {
+        font-size: 1.55rem !important;
+        padding: 1.5rem 5rem 1.5rem 1rem;
+        color: inherit;
+        line-height: 1.7 !important;
+        font-weight: 400;
+      }
+    }
+  }
+}

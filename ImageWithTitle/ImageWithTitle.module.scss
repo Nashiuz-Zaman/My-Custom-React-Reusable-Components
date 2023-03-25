@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.image-with-title-main {
+  flex-basis: 13rem;
+
+  &__title-container {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+}

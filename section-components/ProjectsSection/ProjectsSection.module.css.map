@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,gBAAiB;EACf,OAAO,EAAE,QAAQ;EAEjB,iCAAiB;IACf,UAAU,EAAE,MAAM;EAGpB,iCAAmB;IACjB,OAAO,EAAE,QAAQ;;AAIrB,0BAA2B;EAEvB,iCAAiB;IACf,UAAU,EAAE,MAAM;IAClB,aAAa,EAAE,IAAI;AAKzB,wBAAyB;EACvB,gBAAiB;IACf,KAAK,EAAE,GAAG;ICmNZ,aAAa,EAAE,IAAI",
+"sources": ["ProjectsSection.module.scss","../../../scss/_mixin.scss"],
+"names": [],
+"file": "ProjectsSection.module.css"
+}
